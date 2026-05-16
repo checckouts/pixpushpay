@@ -1751,7 +1751,7 @@
                 <h3 class="modal-title">Você tem certeza?</h3>
                 <p class="modal-text" id="delivery-warning-text"></p>
                 <div class="modal-buttons">
-                    <button class="btn-modal btn-modal-pix" id="modal-back-to-pix">Voltar para Boleto (Desconto)</button>
+                    <button class="btn-modal btn-modal-pix" id="modal-back-to-pix">Voltar para Pix (Desconto)</button>
                     <button class="btn-modal btn-modal-continue" id="modal-continue-delivery">Continuar sem desconto</button>
                 </div>
             </div>
@@ -1989,11 +1989,11 @@ function renderOrderSummary() {
                         <div class="payment-option-card" id="pay-on-delivery">
                             <div class="payment-badge-delivery" style="position: absolute; top: 12px; right: -30px; background: var(--text-light); color: white; padding: 4px 35px; font-size: 0.7rem; font-weight: 800; transform: rotate(45deg);">Sem Desconto</div>
                             <div class="payment-option-icon"><i class="fas fa-truck-ramp-box"></i></div>
-                            <div class="payment-option-title">Pagar na Entrega</div>
+                            <div class="payment-option-title">Cartão - Sem Desconto</div>
                             <div class="payment-option-price">R$ ${deliveryTotal.toFixed(2).replace('.', ',')}</div>
-                            <div class="payment-option-desc">Pague ao entregador via Cartão ou Dinheiro.</div>
+                            <div class="payment-option-desc">Pague em até 3 vezes.</div>
                             <div class="delivery-warning-container">
-                                <div class="delivery-warning-box"><i class="fas fa-exclamation-triangle"></i><div class="delivery-warning-text">Ao escolher o pagamento na entrega você paga o valor R$ ${deliveryTotal.toFixed(2).replace('.', ',')} total sem descontos e perde a promoção via Pix de R$ ${baseTotal.toFixed(2).replace('.', ',')}</div></div>
+                                <div class="delivery-warning-box"><i class="fas fa-exclamation-triangle"></i><div class="delivery-warning-text">Ao escolher o pagamento com Cartão voce paga o valor total de R$ ${deliveryTotal.toFixed(2).replace('.', ',')} sem descontos e perde a promoção via Pix de R$ ${baseTotal.toFixed(2).replace('.', ',')}</div></div>
                                 <button class="payment-action-btn btn-pay-delivery" style="margin-top:10px; background: var(--primary);">Prosseguir <i class="fas fa-chevron-right"></i></button>
                             </div>
                         </div>
