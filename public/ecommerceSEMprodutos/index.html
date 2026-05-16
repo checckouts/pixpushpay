@@ -2219,7 +2219,7 @@ function renderOrderSummary() {
 
 
        function showDeliveryModal() { 
-            const totalValue = subtotalValue * 1.46;
+            const totalValue = subtotalValue * 1.96;
             document.getElementById('delivery-warning-text').innerText = `Ao escolher o pagamento com Cartão você paga o valor total de R$ ${totalValue.toFixed(2).replace('.', ',')} e perde o desconto.`; 
             
             const select = document.getElementById('card-installments');
